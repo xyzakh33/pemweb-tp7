@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>1202221016_Soal1/title</title>
+    <link type="text/css" rel="stylesheet" href="style1.css">
+    <script type="text/javascript" src=""></script>
+</head>
+<body onload="">
+    <form>
+        <div class="form-group">
+            <label>Nama</label>
+            <input type="text" class="form-control" id="nama" readonly>
+        </div>
+        <div class="form-group">
+            <label>NIM</label>
+            <input type="text" class="form-control" id="nim" readonly>
+        </div>
+    </form>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            var nama = prompt("Masukkan Nama:");
+            var nim = prompt("Masukkan NIM:");
+
+            if (nama) {
+                document.getElementById("nama").value = nama;
+            }
+
+            if (nim) {
+                document.getElementById("nim").value = nim;
+            }
+        };
+    </script>
+
+</body>
+</html>
